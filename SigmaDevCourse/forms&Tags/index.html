@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Tags</title>
+  </head>
+  <body>
+    <h1>Form to apply for job.</h1>
+    <form action="post">
+      <div>
+        <label for="username">Enter Your Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="enter your username" autofocus
+        />
+      </div>
+      <div>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">female</label>
+      </div>
+      <div>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes" />
+        <label for="subscribe">subscribe to newsletter</label>
+      </div>
+      <div>
+        <label for="comment">Enter your comments here :</label>
+        <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="language"></label>
+        <select name="language" id="language">
+          <option value="apple">c++</option>
+          <option value="Samsung">python</option>
+          <option value="Oneplus">java</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>

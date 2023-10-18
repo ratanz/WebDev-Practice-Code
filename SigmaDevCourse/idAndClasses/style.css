@@ -1,0 +1,14 @@
+.red{
+    color: red;
+}
+/* these are the classes */
+.bg-yellow{
+    background-color: lightgray
+}
+/* these are the id */
+#firstDiv{
+   /* background-color: black; */
+}
+#secondDiv{
+    background-color: aquamarine;
+}

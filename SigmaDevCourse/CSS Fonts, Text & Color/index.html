@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Fonts, Text & Color</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:ital,wght@1,100;1,300&display=swap");
+
+      h1 {
+        font-family: Poppins, "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      h2 {
+        text-transform: capitalize;
+        /* used to capitalize first letter of word */
+        text-decoration: underline;
+        text-decoration-color: aqua;
+        /* text-decoration-style:wavy; */
+        text-decoration-thickness: 4px;
+        text-indent: 7px;
+        text-align: center;
+      }
+      p {
+        font-family: Oswald, "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 20px;
+        color: red;
+        font-weight: 200;
+        text-decoration: underline;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      .lorem {
+        border: 2px solid black;
+        /* width: 170px; */
+        text-overflow: ellipsis;
+        text-align: center;;
+        /* word-break: break-all; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Fonts</h1>
+      <h2>about fonts</h2>
+      <p>this is code for font</p>
+      <p class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        voluptate architecto tempore veniam dolorum quam doloribus, ea
+        praesentium eius molestiae maiores aspernatur aut sint.
+      </p>
+    </div>
+  </body>
+</html>

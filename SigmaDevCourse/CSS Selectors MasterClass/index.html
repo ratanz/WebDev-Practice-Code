@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors MasterClass</title>
+    <style>
+      div {
+        /* element selectors */
+        background-color: palegoldenrod;
+      }
+      .first {
+        /* class selectors */
+        background-color: lightblue;
+      }
+      #second {
+        /* id selectors */
+        background-color: lightcoral;
+      }
+      #third {
+        background-color: blueviolet;
+      }
+
+      /* child selectors */
+
+      div > p {
+        color: purple;
+        background-color: lightpink;
+
+        /* if there is not direct child inside this property can't be applied */
+      }
+
+      /* Descendent Selectors */
+      div p {
+        color: black;
+        background-color: aliceblue;
+
+        /* it will apply if there is <p> inside it weather or not this is direct
+            child is present or not */
+      }
+
+      /* Universal Selectors */
+      * {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      /* Pseudo selector */
+
+      a:visited {
+        color: gray;
+      }
+
+      a:link {
+        color: green;
+      }
+      a:active {
+        background-color: aliceblue;
+      }
+
+      a:hover {
+        background-color: lightcoral;
+      }
+
+      p:first-child {
+        background-color: lightpink;
+        /* this will apply to first child of element */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>this is first paragraph</p>
+      <p>this is second paragraph</p>
+    </main>
+    <div class="first">
+      this is a div
+      <p>this is paragraph inside div</p>
+    </div>
+
+    <div id="second">this is 2nd div</div>
+
+    <div id="third">this is 3rd div</div>
+
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://github.com">Go to github</a>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity & Cascade</title>
+    <style>
+      /*The specificity of this selector is 1  */
+      h1 {
+        color: magenta;
+      }
+      /*The specificity of this selector is 10  */
+      .one {
+        color: black;
+      }
+      /*The specificity of this selector is 1 + 10 = 11 */
+      h1.two {
+        color: blue;
+      }
+      /*The specificity of this selector is 10 but if we use !important then the specificity will be 10000 */
+      .three {
+        /* color: lightblue !important; */
+      }
+      /*This is an example of attribute selector The specificity of this selector is 10  */
+      [data-x="a"] {
+        color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="one two three" data-x="a">CSS Specificity</h1>
+    </div>
+  </body>
+</html>

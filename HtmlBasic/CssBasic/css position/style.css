@@ -1,0 +1,18 @@
+body {
+  background-color: darkgray;
+}
+#box1 {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  position: sticky;
+  top: 5px;
+}
+#box2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgoldenrodyellow;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}

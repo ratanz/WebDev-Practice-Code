@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing Units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 18px;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 1920px; */
+        width: 100vw;
+        height: 20vh;
+        box-sizing: border-box;
+        margin: auto;
+        background-color: lightblue;
+      }
+      .container {
+        border: 2px solid black;
+        /* width: 1920px; */
+        width: 100vw;
+        /* height: 100vh; */
+        min-height: 80vh;
+        box-sizing: border-box;
+        margin: 23px auto;
+        /* font-size: 18px; */
+        background-color: lightblue;
+      }
+      .container > div {
+        font-size: 2em;
+        width: 50%;
+        border: 2px solid red;
+        /* widhth %means parent's widhth of % */
+
+        /* font-size: 2rem;   */
+        /* rem means value of html i.e root so value of rem will be calculated according to that */
+      }
+      .container > div > div {
+        border: 2px solid blue;
+        width: 50%;
+      }
+      .container2 {
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: 23px auto;
+        color: black;
+        font-size: 22px;
+        width: 80vh;
+      }
+
+      body {
+        background-color: lightslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <div>
+        this is div
+        <div>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+          quibusdam aperiam tenetur, dolorum enim possimus, nulla ipsa libero
+          itaque assumenda qui iure!
+        </div>
+      </div>
+    </div>
+    <div class="container2">this is second-container</div>
+  </body>
+</html>

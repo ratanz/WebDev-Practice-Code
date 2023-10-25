@@ -1,0 +1,15 @@
+#container {
+  border: 2px solid black;
+}
+#container > p {
+  background-color: yellow;
+}
+
+#container ~ p {
+  /* background-color: yellow; */
+  /* adjacent sibling */
+}
+#container + p {
+  background-color: red;
+  /*  general sibling */
+}

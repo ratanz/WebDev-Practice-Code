@@ -1,0 +1,48 @@
+body {
+  background-color: lightslategrey;
+}
+
+/* a:link{
+    color: lightblue;
+}
+a:hover{
+    color: lightcoral;
+    font-size: 1em;
+
+}
+a:active{
+    color: purple;
+    font-size: 1em;
+}
+a:visited{
+    color: red;
+} */
+/* ------------------------------ */
+
+li:hover {
+  background-color: yellow;
+}
+li:not(:hover) {
+  background-color: lightpink;
+}
+li:nth-child(3n) {
+  /* background-color: slateblue; */
+}
+
+/* ------------------------------ */
+
+#greeting {
+  background-color: lightcoral;
+  box-shadow: 2px 2px 22px black;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#greeting p {
+  background-color: lightblue;
+  padding: 10px;
+  display: none;
+}
+#greeting:hover p {
+  display: block;
+}

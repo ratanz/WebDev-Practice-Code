@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS overflow</title>
+    <style>
+      .box {
+        width: 55vw;
+        height: 15vh;
+        border: 2px solid black;
+        overflow: scroll;
+        /* overflow-x: hidden; */
+        /* overflow-y: scroll; */
+        overflow: scroll auto;
+        /* white-space: nowrap; */
+        text-overflow: ellipsis;
+        /* overflow: clip;  */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      im good in coding so im trying to improve everyday. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Consectetur laboriosam, similique atque
+      incidunt facilis molestiae ratione praesentium quo cum quam debitis.
+    </div>
+  </body>
+</html>

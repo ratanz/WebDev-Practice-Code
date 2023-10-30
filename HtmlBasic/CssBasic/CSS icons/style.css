@@ -1,0 +1,60 @@
+:root {
+  --color: lightblue;
+  --seccolor: lightgray;
+}
+body {
+  background-color: var(--seccolor);
+}
+.icons a {
+  /* also can use .icons to remove text decoration */
+  text-decoration: none;
+  margin: 15px;
+  display: inline-block;
+
+}
+.icons a:hover{
+  animation: bounce 0.5s forwards;
+}
+
+.icons {
+  text-align: center;
+}
+.fa-brands.fa-github.fa-3x {
+  color: rgb(7, 6, 6);
+}
+.fa-brands.fa-github.fa-3x:hover {
+  color: rgba(24, 20, 20, 0.49);
+}
+.fa-brands.fa-twitter.fa-3x {
+  color: rgb(73, 163, 183);
+}
+.fa-brands.fa-twitter.fa-3x:hover {
+  color: rgba(73, 163, 183, 0.49);
+}
+.fa-brands.fa-facebook.fa-3x {
+  color: rgb(34, 100, 255);
+}
+.fa-brands.fa-facebook.fa-3x:hover {
+  color: hsla(222, 100%, 57%, 0.49);
+}
+.fa-brands.fa-instagram.fa-3x {
+  color: rgb(194, 52, 184);
+}
+.fa-brands.fa-instagram.fa-3x:hover {
+  color: rgba(194, 52, 185, 0.49);
+}
+.fa-brands.fa-google.fa-3x {
+  color: rgb(51, 181, 224);
+}
+.fa-brands.fa-google.fa-3x:hover {
+  color: rgba(51, 181, 224, 0.49);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+}

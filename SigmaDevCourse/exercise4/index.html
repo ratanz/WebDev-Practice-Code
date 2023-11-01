@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multicolor website</title>
+    <style>
+      body {
+        background-color: rgba(117, 118, 125, 0.56);
+      }
+      :root {
+        --primary-color: #66aac5;
+        --secondary-color: #121512;
+      }
+      .navbar {
+        background-color: var(--primary-color);
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .navbar:hover {
+        background-color: #4078a7;
+      }
+      .navbar a {
+        color: var(--secondary-color);
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        color: whitesmoke;
+      }
+      .heading {
+        color: rgba(15, 141, 169, 0.879);
+        text-align: center;
+        height: 40px;
+      }
+      .heading:hover {
+        color: #4078a7;
+      }
+      .text {
+        background-color: rgb(158, 158, 158);
+        border: 2px solid black;
+        margin-top: 10px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="heading">
+      <h1>Multicolor website</h1>
+    </div>
+
+    <div class="text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+        dolorem nisi maxime perferendis rerum reiciendis quasi assumenda cumque
+        alias harum porro, repudiandae fuga repellendus temporibus fugiat optio
+        quo beatae suscipit quam deleniti. Nisi, tenetur perspiciatis!
+      </p>
+    </div>
+  </body>
+</html>

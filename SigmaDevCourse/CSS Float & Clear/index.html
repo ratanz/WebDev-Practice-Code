@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float & Clear</title>
+    <style>
+      img {
+        float: left;
+      }
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+      .card {
+        border: 3px solid red;
+      }
+      .card:nth-child(3) {
+        background-color: lightblue;
+        /* clear: left; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        src="https://staticg.sportskeeda.com/editor/2022/10/fd2b9-16652598039107-1920.jpg"
+        alt=""
+        width="250px"
+      />
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        incidunt vero libero impedit est tenetur sequi eveniet non maiores
+        dignissimos nostrum totam unde dicta omnis et ipsum assumenda, nisi at?
+      </div>
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto non
+        architecto temporibus quibusdam, itaque tempora facilis quasi esse
+        dicta! Pariatur fugiat perspiciatis doloremque neque architecto placeat
+        hic veritatis qui, debitis itaque accusantium magnam laboriosam
+        repellendus dolores. Nostrum dolorem quo atque similique, iusto sequi
+        impedit illo saepe molestiae quae iste. Repellat accusantium ipsam
+        tempora natus enim provident iste incidunt veritatis, ullam impedit
+        commodi numquam vitae nesciunt officiis tenetur quia placeat? Maxime
+        adipisci necessitatibus consequuntur fuga quo fugit hic excepturi
+        asperiores nobis, eveniet dolore nam! Aut quae id expedita mollitia!
+        Repudiandae esse libero cum quaerat voluptate, hic illum dolore quis
+        nostrum ut neque natus molestias similique distinctio exercitationem
+        deleniti quod atque eaque? Tenetur doloremque unde laudantium asperiores
+        amet consequuntur aperiam, et ut, nesciunt corrupti labore expedita
+        eveniet velit, ipsum sunt suscipit rem provident vel culpa! Nobis
+        voluptatem deleniti dolores temporibus accusamus sed iure.
+      </div>
+      <div class="card">Card3</div>
+    </div>
+  </body>
+</html>

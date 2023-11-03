@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4em;
+}
+h1{
+    background-color: lightblue;
+}
+p{
+    color: lightblue;
+}

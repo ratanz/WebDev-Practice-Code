@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5</title>
+    <style>
+      * {
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+
+      .logo {
+        height: 200px;
+
+        display: flex;
+
+        justify-content: center;
+      }
+
+      .logo img {
+        height: 200px;
+      }
+
+      .navbar {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        background-color: rgba(45, 42, 45, 0.752);
+      }
+
+      header nav ul li {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+        font-weight: 400;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        color: rgb(30, 17, 32);
+        transition: all ease 0.5s;
+        color: 25, 25, 25;
+      }
+
+      nav ul {
+        display: flex;
+        align-items: center;
+        background-color: 32, 32, 32;
+      }
+
+      .boxes {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #436291;
+        height: 30vh;
+        width: 200vh;
+        margin: 40px;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+
+      .box1:hover{
+        color: whitesmoke;
+        transition-duration: 0.5s;
+        box-shadow: 0 0 5px white, 0 0 5px white, 0 0;
+      }
+
+      p {
+        padding: 20px;
+      }
+
+      .box2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f49d6e9f;
+        height: 30vh;
+        width: 200vh;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+
+      .box2:hover{
+        color: whitesmoke;
+        transition-duration: 0.5s;
+        box-shadow: 0 0 5px white, 0 0 5px white, 0 0;
+      }
+
+      .container {
+        height: 150px;
+        width: 100%;
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .welcome {
+        color: white;
+        display: flex;
+        background-color: rgba(241, 130, 176, 0.416);
+        width: 500px;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .welcome:hover{
+        background-color: rgb(25, 25, 25);
+        transition-duration: 0.5s;
+        box-shadow: 0 0 5px white, 0 0 5px white, 0 0;
+      }
+
+      footer {
+        height: 10vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+      }
+
+      .fixed-icon {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: yellow;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+
+      .fixed-icon:hover{
+        cursor: pointer;
+       background-color: rgba(255, 255, 0, 0.641);
+        box-shadow: 0 0 5px white, 0 0 5px white, 0 0;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Contact Us</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="fixed-icon"></div>
+
+    <main>
+      <div class="boxes">
+        <div class="box1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            quidem, nostrum sed, magnam aliquid eius soluta dolores accusamus a
+            ut quae rerum ea beatae officiis reprehenderit, sunt officia libero
+            minus illum ipsa fugiat? Laboriosam, ullam qui? Eum dignissimos
+            asperiores ipsa.
+          </p>
+        </div>
+
+        <div class="box2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+            eaque in molestiae, commodi odit tenetur eveniet blanditiis magni
+            ipsa quaerat! Architecto, tenetur cumque? Debitis quasi nobis
+            quibusdam omnis. Iusto itaque eligendi quam deleniti? Unde porro
+            perferendis soluta deserunt ad fugiat!
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="welcome">
+          <p>Welcome to Exercise of SIGMA WEB DEV course</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>Made By R A T A N</p>
+      </div>
+    </footer>
+  </body>
+</html>

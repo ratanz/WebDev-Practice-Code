@@ -1,0 +1,62 @@
+
+:root{
+    --background-color:rgb(25, 25, 25);
+    --text-color : #FFFFFF;
+}
+
+body{
+    
+    background-color: var(--background-color);
+    color: var(--text-color);
+     font-family: 'Poppins', sans-serif;
+     transition: all 0.3s ease;
+}
+
+.navbar{
+    background-color: rgba(118, 117, 117, 0.833);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo{
+    height: 30px;
+    width: 40px;
+    align-self: center;
+    
+}
+
+.logo:hover{
+    box-shadow: 0 0 10px rgb(236, 38, 38);
+}
+
+.navbar a{
+    transition: all 0.3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #ff6347;
+    
+}
+
+main{
+    height: 80vh;
+}
+
+
+main p{
+    text-align: center;
+    background-color: #47cbff70;
+}
+
+p:hover{
+    box-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px rgba(255, 255, 255, 0.804);
+    transition-duration: 1s;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+}

@@ -1,0 +1,55 @@
+/* transforms.css */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid red;
+}
+
+/* Uncomment the transform property you want to use */
+
+/* .box {
+    transform: rotate(44deg);
+} */
+
+/* .box {
+    transform: rotate(0.5turn);
+} */
+
+/* .box {
+    transform: rotateX(180deg);
+} */
+
+/* .box {
+    transform: rotateZ(80deg);
+} */
+
+/* .box {
+    transform: scaleX(1.6);
+} */
+
+/* .box {
+    transform: skew(50deg);
+} */
+
+/* .box {
+    transform: translate(50vh);
+} */
+
+/* .box {
+    transform: translateY(45vh) skewY(20deg)

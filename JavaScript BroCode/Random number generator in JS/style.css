@@ -1,0 +1,26 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#myButton{
+    font-size: 2em;
+    padding: 7px;
+    background-color: #008CBA; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#myButton:hover{
+    background-color: #008bbacc;
+    transition-duration: 0.57s;
+    color: darkorange;
+    box-shadow: 0 0 10px darkorange , 0 0 10px darkorange;
+}
+
+#myLabel{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 15px;
+    color: rgb(211, 29, 29);
+}

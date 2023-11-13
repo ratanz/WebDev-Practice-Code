@@ -1,0 +1,49 @@
+.container {
+  background-color: aliceblue;
+  height: 80vh;
+  width: 40vw;
+}
+
+.box {
+  width: 34px;
+  height: 45px;
+  background-color: aquamarine;
+  animation-name: smoothAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: 1s; */
+  /* animation-direction: alternate-reverse; */
+  animation-play-state: running;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: smoothAnimation 3s ease-in-out 1s infinite alternate-reverse,
+             smoothAnimation2 3s ease-in-out 1s 2;
+}
+
+@keyframes smoothAnimation {
+  from {
+    background-color: blanchedalmond;
+  }
+  to {
+    transform: translateX(1000px);
+    background-color: aquamarine;
+  }
+}
+
+@keyframes smoothAnimation2 {
+  0% {
+    transform: rotate(100deg);
+  }
+  20% {
+    transform: rotate(200deg);
+  }
+  50% {
+    transform: rotate(230deg);
+  }
+  80% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

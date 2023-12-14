@@ -1,0 +1,60 @@
+body {
+    background-color: rgba(25, 25, 25, 0.964);
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgba(209, 91, 111, 0.879);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color: rgba(39, 40, 41, 0.4);
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 16px palevioletred;
+}
+
+#textBox {
+    width: 70%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(232, 232, 232, 0.481);
+    margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: 1em;
+    border: 2px solid rgba(255, 0, 0, 0.289);
+
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 15px;
+    background-color: rgba(232, 232, 232, 0.481);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.289);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(232, 232, 232, 0.23);
+    transition-duration: 0.4s;
+}
+
+#result {
+    font-size: 1.5em;
+    font-weight: bold;
+}

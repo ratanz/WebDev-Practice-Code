@@ -1,49 +1,27 @@
-function faultyCalculator(num1, num2, operator) {
-    let result;
-    let randomNumber = Math.floor(Math.random() * 10);
+let random = Math.random()
+console.log(random)
+let a = prompt("Enter first number")
+let c = prompt("Enter operation")
+let b = prompt("Enter second number")
 
-    if (randomNumber < 1) { // 10% chance to perform wrong operation
-        switch (operator) {
-            case '+':
-                result = num1 - num2;
-                break;
-            case '-':
-                result = num1 / num2;
-                break;
-            case '*':
-                result = num1 + num2;
-                break;
-            case '/':
-                result = num1 ** num2;
-                break;
-            default:
-                console.log("Invalid operator");
-                return;
-        }
-    } else { // 90% chance to perform correct operation
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                if (num2 != 0) {
-                    result = num1 / num2;
-                } else {
-                    console.log("Cannot divide by zero");
-                    return;
-                }
-                break;
-            default:
-                console.log("Invalid operator");
-                return;
-        }
-    }
 
-    return result;
+let obj = {
+    "+" : "-",
+    "*" : "+",
+    "-" : "/",
+    "/" : "**",
+
+}
+
+if(random > 0.1){
+    // perform correct calculation
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+
+}
+
+else{
+    // Perform wrong calculation
+
+    c = obj[c]
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
 }

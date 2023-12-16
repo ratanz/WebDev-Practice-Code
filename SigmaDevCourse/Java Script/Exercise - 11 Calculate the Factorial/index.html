@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the Factorial</title>
+</head>
+<body>
+    <form id="factorial-form">
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number" min="0">
+        <button type="submit">Calculate Factorial</button>
+    </form>
+
+    <script src="index.js"></script>
+    <script>
+        document.getElementById('factorial-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let num = document.getElementById('number').value;
+            console.log(`Factorial of ${num} is ${factorialForLoop(num)}`);
+        });
+    </script>
+</body>
+</html>

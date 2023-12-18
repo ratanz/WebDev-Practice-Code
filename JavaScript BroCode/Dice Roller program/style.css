@@ -1,0 +1,45 @@
+body {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+#container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(25, 25, 25);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: rgba(33, 33, 33, 0.968);
+  color: red;
+  box-shadow: 1px 1px 10px 1px red;
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  font-size: 1rem;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#diceResult{
+  margin: 25px;
+}
+
+#diceImages img{
+  width: 150px;
+  margin: 5px;
+}

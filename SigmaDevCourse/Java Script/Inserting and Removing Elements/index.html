@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing Elements</title>
+    <style>
+        .bg-red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container red bg-red">
+        <div class="box">this is a box</div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "i have been inserted by aceu"
+            // div.setAttribute("class", "created");
+            // document.querySelector(".container").before(div)
+
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("afterend", "<b> i wanna be the richest fucking person on earth... bitch</b>")
+
+        </script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

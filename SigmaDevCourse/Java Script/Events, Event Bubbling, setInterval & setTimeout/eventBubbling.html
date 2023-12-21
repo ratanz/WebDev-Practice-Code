@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin: 34px;
+            padding: 34px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgb(142, 22, 175);
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: yellow;
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">this is a child</div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("contextmenu", (e) => {
+            e.stopPropagation(); // to stop event bubbling
+            alert("child was clicked!");
+        });
+
+        document
+            .querySelector(".childContainer")
+            .addEventListener("contextmenu", (e) => {
+                e.stopPropagation();
+                alert("childContainer was clicked!");
+            });
+
+        document
+            .querySelector(".container")
+            .addEventListener("contextmenu", (e) => {
+                alert("child container was clicked!");
+            });
+
+        // set Timeout and setInterval -
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`;
+        }
+
+        // set interval is used for repeating code for set amount of time
+        // let a = setInterval(() => {
+        //     document.querySelector(".childContainer").style.background =
+        //         getRandomColor();
+        // }, 1000);
+
+        // console.log(a);
+        // clearInterval(a);
+        // clear interval is used for stopping.
+
+        // setTimeout only runs once after certain period of time
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.background =
+                getRandomColor();
+        }, 2000);
+
+        //  clearTimeout(a); // used to stop setTimeout method
+    </script>
+</body>
+
+</html>

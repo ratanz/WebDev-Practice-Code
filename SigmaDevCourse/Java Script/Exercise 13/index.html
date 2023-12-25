@@ -41,10 +41,35 @@
         border-radius: 3px;
         font-size: 14px;
       }
+
+      #addCard {
+        background-color: #af4cad; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #addCard:hover {
+        background-color: #45a049;
+        transition-duration: 0.7s;
+      }
+
     </style>
   </head>
 
   <body>
+    <button id="addCard">Add Card</button>
     <div class="container">
       <div class="card">
         <div class="image">

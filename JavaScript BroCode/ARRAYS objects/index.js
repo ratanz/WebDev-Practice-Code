@@ -45,4 +45,7 @@ const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? f
 
 const minFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit : min);
 
-console.log(minFruit);
+// console.log(minFruit);
+
+console.log(`The fruit with the most calories is "+ ${maxFruit.name}". It has "+ ${maxFruit.calories} calories `)
+console.log(`The fruit with the least calories is "+ ${minFruit.name}". It has "+ ${minFruit.calories} calories `)

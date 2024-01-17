@@ -1,0 +1,17 @@
+#myBox{
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+    font-size: 4.5rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+#myButton{
+    font-size: 2rem;    
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    color: aliceblue;
+}

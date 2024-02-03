@@ -1,0 +1,11 @@
+h3 {
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+h3:hover {
+    color: rgb(59, 162, 217);
+    transition-duration: 1s;
+    cursor: pointer;
+}

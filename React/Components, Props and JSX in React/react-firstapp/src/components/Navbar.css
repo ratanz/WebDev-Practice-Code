@@ -1,0 +1,23 @@
+nav,
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+ul {
+    gap: 34px;
+}
+
+nav {
+    background-color: rgb(164, 113, 188);
+    padding: 24px;
+}

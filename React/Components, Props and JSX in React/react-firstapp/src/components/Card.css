@@ -1,0 +1,22 @@
+.card {
+    width: 20vw;
+    border: 2px solid black;
+    margin: 34px;
+    height: 270px;
+    border-radius: 13px;
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 19px 3px rgb(18, 151, 181);
+    transition-duration: 0.8s;
+}
+
+
+h1,
+p {
+    padding: 4px;
+    margin: 4px;
+    text-align: center;
+}

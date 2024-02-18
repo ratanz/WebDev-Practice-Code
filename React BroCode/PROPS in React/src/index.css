@@ -1,0 +1,9 @@
+.student{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  padding: 5px;
+}
+
+.student p {
+  margin: 10;
+}

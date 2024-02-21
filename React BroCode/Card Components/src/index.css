@@ -1,0 +1,31 @@
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.666);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block
+}
+
+.cardImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.cardTitle {
+    font-family: 'Franklin Gothic Medium';
+    margin: 0;
+    color: hsla(0, 0%, 0%, 0.818);
+
+}
+
+.cardText {
+    font-family: 'Franklin Gothic Medium';
+    color: hsla(0, 0%, 0%, 0.684);
+}

@@ -10,9 +10,11 @@
 
 <body>
     <div class="main w-full min-h-screen bg-black text-white">
+
         <div class="heading flex justify-center items-center">
             <h1 class="text-3xl font-bold mt-4 text-zinc-200 flex justify-center items-center">Task manager</h1>
         </div>
+
         <div class="form p-10 text-white">
             <form action="create" method="post">
                 <input class="block w-4/12 rounded-md outline-none px-5 py-2 bg-zinc-800" type="text"
@@ -29,7 +31,10 @@
                             <h1 class="text-white text-3xl tracking-tighter">
                                 <%= val %>
                             </h1>
-                            <a class="text-blue-600 inline-block mt-3" href="/file/<%= val %>">Read More</a>
+                            <div class="flex w-full justify-between items-center mt-3">
+                                <a class="text-blue-600 inline-block " href="/file/<%= val %>">Read More</a>
+                                <a class="text-zinc-500" href="/edit/<%= val %>">Edit</a>
+                            </div>
                         </div>
                         <% }) %>
                             <% } else{ %>

@@ -24,6 +24,10 @@ app.get('/file/:filename', function (req, res) {
     const filename = req.params.filename + '.txt';
     console.log('Attempting to read file:', filename);
     fs.readFile(`./files/${filename}`, "utf-8", function (err, filedata) {
+        if (err) {
+            console.error('Error reading file:', err);
+            return res.status(500).send('Server Error');
+        }
         res.render('show', { filename: req.params.filename, filedata: filedata });
     });
 });
@@ -36,9 +40,6 @@ app.get('/edit/:filename', function (req, res) {
 app.post('/edit', function (req, res) {
     const previous = `./files/${req.body.previous.trim()}.txt`;
     const newFile = `./files/${req.body.new.trim()}.txt`;
-
-    console.log('Previous file:', previous);
-    console.log('New file:', newFile);
 
     fs.rename(previous, newFile, function (err) {
         if (err) {

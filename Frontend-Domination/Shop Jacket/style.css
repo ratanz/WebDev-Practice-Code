@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(202, 202, 202);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  /* background-color: #848484ef; */
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+}
+
+nav h5 {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav h5:hover {
+  text-decoration: underline;
+  scale: 1.1;
+  transition: all 0.5s ease;
+}
+
+nav i {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.774);
+  cursor: pointer;
+}
+
+nav i:hover {
+  scale: 0.9;
+  transition: all 0.5s ease;
+}
+
+.text1 h1 {
+  width: 100%;
+  padding: 40px 80px;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 4.4vw;
+}
+
+.text2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text2 p {
+  width: 50%;
+  padding: 12px 80px;
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 1.3vw;
+}
+
+.right {
+  width: 20%;
+}
+
+.links {
+  display: flex;
+  padding: 0px 30px;
+  flex-direction: column;
+}
+
+.links a i {
+  opacity: 0;
+}
+
+.links:hover a i {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.links:hover a {
+  text-decoration: underline;
+}
+
+.elem a {
+  font-size: 1vw;
+  border-top: 2px solid rgba(31, 31, 31, 0.718);
+  padding: 12px 2px;
+  color: rgb(17, 17, 17);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-image: url(https://images.unsplash.com/photo-1648638470587-df4721e0da33?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 70% 40%;
+}
+
+@media (max-width: 600px) {
+  nav {
+    height: 60px;
+    width: 100%;
+    gap: 10px;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  nav h5 {
+    display: none;
+  }
+  
+  nav i {
+    font-size: 14px;
+    color: white;
+    padding: 8px;
+  }
+  
+  .text1 h1 {
+    width: 100%;
+    padding: 20px 30px;
+    font-weight: 400;
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+  
+  .text2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text2 p {
+    width: 90%;
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+  
+  .right {
+    width: 90%;
+    margin-top: 20px;
+  }
+  
+  .links {
+    padding: 0px 15px;
+  }
+  
+  .elem a {
+    font-size: 4vw;
+    padding: 10px 2px;
+  }
+
+  .bottom {
+    height: 20%;
+  }
+}

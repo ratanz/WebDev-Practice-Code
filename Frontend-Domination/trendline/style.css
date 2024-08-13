@@ -11,14 +11,14 @@ body {
   width: 100%;
 }
 
-main {
+.main {
   height: 100%;
   width: 100%;
 }
 
 .nav {
   /* background-color: bisque; */
-  height: 4vw;
+  height: 5vw;
   width: 100%;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@ main {
 }
 
 .nav-part1 h4 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .circle {
@@ -62,8 +62,12 @@ main {
   margin-left: 1vw;
 }
 
+.nav h5 {
+  display: none;
+}
+
 .nav2 {
-  height: 3vw;
+  height: 2vw;
   width: 100%;
   display: flex;
   align-items: center;
@@ -78,23 +82,21 @@ main {
 }
 
 .content {
-   height: 41vw;
+  height: 41vw;
   width: 100%;
 }
 
 .text-content {
-    height: 39%;
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-
+  height: 39%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .text-content::-webkit-scrollbar {
   background-color: transparent;
   height: 5px;
-
 }
 
 .text-content::-webkit-scrollbar-thumb {
@@ -103,28 +105,29 @@ main {
 }
 
 .elem {
-    flex-shrink: 0;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex-shrink: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .elem h1 {
   font-size: 6vw;
-  font-weight: 300;
+  font-weight: 200;
   color: black;
-  font-family: serif;
+  font-family: Arial;
   text-transform: uppercase;
+  scroll-behavior: smooth;
 }
 
 .image-content {
-    height: 72.3%;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    overflow-x: auto;
+  height: 72.3%;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
 }
 
 .image-content::-webkit-scrollbar {
@@ -132,8 +135,128 @@ main {
 }
 
 .image-content img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .main {
+    height: 50%;
+  }
+
+  .nav {
+    /* background-color: bisque; */
+    height: 4vw;
+    width: 100%;
+    padding: 4vw;
+  }
+
+  .nav-part1 h4 {
+    font-size: 6px;
+  }
+
+  .nav-part1 {
+    gap: 2px;
+  }
+
+  .nav-part2 {
+    gap: 1vw;
+  }
+
+  .nav h5 {
+    display: initial;
+  }
+
+  .nav h5 i {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .nav-part2 h4:nth-child(1) {
+    display: initial;
+    margin-right: 20px;
+  }
+
+  .circle {
+    height: 1vw;
+    width: 1vw;
+  }
+
+  .nav-part2 h4 {
+    display: none;
+  }
+
+  .nav2 {
+    height: 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+  }
+
+  .nav2 h5 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #444;
+  }
+
+  content {
+    height: 41vw;
+    width: 100%;
+  }
+
+  .text-content {
+    height: 69%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 3px;
+  }
+
+  .text-content::-webkit-scrollbar-thumb {
+    background-color: rgba(207, 81, 31, 0.725);
+    border-radius: 10px;
+  }
+
+  .elem {
     flex-shrink: 0;
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: fit-content;
+    margin-right: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .elem h1 {
+    font-size: 10vw;
+    white-space: nowrap;
+  }
+
+  .image-content {
+    height: 50vh; /* Adjust the height for tablets */
+  }
+
+  .image-content img {
+    width: 80%; /* Show a bit of the next image */
+  }
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+  .image-content {
+    height: 40vh; /* Further reduce height for mobile */
+  }
+
+  .image-content img {
+    width: 100%; /* Full width for mobile */
+  }
 }

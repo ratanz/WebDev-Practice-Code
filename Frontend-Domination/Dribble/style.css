@@ -75,7 +75,7 @@ html , body {
 }
 
 .nav-part-2 button:nth-child(1){
-    background-color: rgba(192, 191, 191, 0.708);
+    background-color: rgb(222, 221, 221);
     color: #1d1c1c;
 }
 

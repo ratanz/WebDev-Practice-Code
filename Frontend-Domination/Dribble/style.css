@@ -121,8 +121,8 @@ html , body {
 
 .content h1 {
     font-size: 3vw;
-    font-weight: 500;
-    font-family: Satoshi;
+    font-weight: 600;
+    font-family: Space Mono;
     line-height: 2.5vw;
     color: black;
     margin: 1.7vw;
@@ -131,7 +131,7 @@ html , body {
 
 .content h4 {
     font-size: 1vw;
-    font-weight: 500;
+    font-weight: 400;
     color: black;
     text-align: center;
 }
